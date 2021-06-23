@@ -28,7 +28,7 @@
  </nav>
 <script>
      var  local = window.location.pathname.substring(1)
-     console.log(local)
+     console.log(local,window.location)
     $('.navbar-nav li a').each(function(index,item){
         var href = $(item).attr('href')
         if(href == local) {
