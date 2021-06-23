@@ -29,10 +29,7 @@
 <script>
      var  index = window.location.pathname.lastIndexOf("\/")
      var  url = window.location.pathname
-      debugger
-     var local = url.substring(index+1,url.length)
-    //  console.log(local,window.location)
-     
+     var  local = url.substring(index+1,url.length)
     $('.navbar-nav li a').each(function(index,item){
         var href = $(item).attr('href')
         if(href == local) {
