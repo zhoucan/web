@@ -27,9 +27,14 @@
         </div>
  </nav>
 <script>
+   
      var  index = window.location.pathname.lastIndexOf("\/")
      var  url = window.location.pathname
      var  local = url.substring(index+1,url.length)
+     console.log(window.location)
+     if(url == '/'){
+         $('.tx-navbar .navbar-nav li').eq(0).addClass('active')
+     }
     $('.navbar-nav li a').each(function(index,item){
         var href = $(item).attr('href')
         if(href == local) {
