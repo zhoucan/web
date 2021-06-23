@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>天芯pro-关于我们</title>
+    <meta name="keywords" content="天芯pro" />
+    <meta name="description" content="天芯pro" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/index.css" />
+   
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <include src="head.html"></include>
+    <div class="ad">
+      <img class='wow bounceInDown' data-wow-delay=".1s" src="image/a3.jpg" alt="" width="100%">
+      <h1  class='wow bounceIn' data-wow-duration="1s" data-wow-delay="1s">关于我们</h1>
+    </div>
+    <div class="aboutbg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 news">
+          <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab"><h3>关于我们</h3>
+            </a>
+          </li>
+          <!-- <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">企业简介</a></li> -->
+        </ul>
+        </div> 
+        <div>
+          <div class="col-md-12 about">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active">
+                <a
+                  href="#tab1"
+                  aria-controls="tab1"
+                  role="tab"
+                  data-toggle="tab"
+                  ><h4>企业简介</h4></a
+                >
+              </li>
+              <!-- <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">企业简介</a></li> -->
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+                <div class="jumbotron">
+                    <p>天芯科技以诚信为本，专业为主，倡导以高精技术服务行业，以优质产品回馈每位用户。</p>
+                    <p> 我们拥有业内优秀的软件研发团队及服务器运维团队，且即将成立天芯研究院，专注研究产业链改赋能实体经济领域。</p>
+                    <p> 目前天芯科技产业链总投资为8000万美金，自成立以来，凭借卓越的投资运营能力，目前天芯科技总市值已突破7亿；根据天芯科技战略规划，我们目标在未来13个月内，公司总估值突破100亿。</p>
+                </div>
+              </div>
+              <!-- <div role="tabpanel" class="tab-pane fade" id="tab2">3323</div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+        
+    </div>
+    
+      <div class="container">
+        <div class="GDMap">
+        <div id="containerMap"></div>
+      </div>
+      <div class="row">
+        <h3 class="text-center" style="padding-top:40px">合作伙伴</h3>
+        <div class="swiper-scroll">
+          <div class="swiper-container swiper-no-swiping" id="swiper-scroll">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="img-responsive" src="image/s1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img class="img-responsive" src="image/s2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img class="img-responsive" src="image/s3.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img class="img-responsive" src="image/s4.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img class="img-responsive" src="image/s5.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img class="img-responsive" src="image/s6.png" alt="" />
+              </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        </div>
+       </div>
+    </div>
+        
+    <include src="footer.html"></include>
+    <div class="backtop animated"></div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/include.js" ></script>
+    <script src="js/index.js"></script>
+    <!-- 加载地图JSAPI脚本 -->
+    <script src="https://webapi.amap.com/maps?v=1.4.15&key=99e0a741b9b7388230fb890b61c841c7"></script>
+    <script>
+    //实例化信息窗体
+    content = [];
+    content.push("<img src='image/a4.jpg' width='80'><div class='address'>地址：浙江省杭州市余杭区景兴路欧美金融城T4美国中心</div></div>");
+
+var infoWindow = new AMap.InfoWindow({
+    isCustom: true,  //使用自定义窗体
+    content: createInfoWindow( content.join("<br/>")),
+    offset: new AMap.Pixel(160, -42)
+});
+function createInfoWindow(content) {
+    var info = document.createElement("div");
+    info.className = "custom-info input-card content-window-card";
+
+    // 定义中部内容
+    var middle = document.createElement("div");
+    middle.className = "info-middle";
+    middle.style.backgroundColor = 'white';
+    middle.innerHTML = content;
+    info.appendChild(middle);
+
+    // 定义底部内容
+    var bottom = document.createElement("div");
+    bottom.className = "info-bottom";
+    bottom.style.position = 'absolute';
+    bottom.style.bottom = '-14px';
+    bottom.style.margin = '0 auto';
+    var sharp = document.createElement("img");
+    sharp.src = "https://webapi.amap.com/images/sharp.png";
+    bottom.appendChild(sharp);
+    info.appendChild(bottom);
+    return info;
+}
+
+var lng = 120.00278921321348
+var lat = 30.281668714389475
+
+var map = new AMap.Map("containerMap", {
+    resizeEnable: true,
+    center: [lng, lat],
+    zoom: 16
+});
+
+addMarker()
+//添加marker标记
+function addMarker() {
+    map.clearMap();
+    var marker = new AMap.Marker({
+        map: map,
+        position: [lng, lat]
+    });
+       //弹出自定义的信息窗体
+       infoWindow.open(map, marker.getPosition());
+}
+    </script>
+  </body>
+</html>
