@@ -358,4 +358,11 @@ body {
 .ibg {
   background: url('../image/ibg.png') no-repeat center center;
   background-size: 100%;
+  margin-top: 50px;
+}
+.ibg .des {
+  padding-top: 70px;
+}
+.ibg .row-two .des  {
+  justify-content:flex-start
 }
