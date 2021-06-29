@@ -17,6 +17,16 @@ $(function(){
           prevEl: '.swiper-button-prev',
         },
       });
+      var swiperxs = new Swiper('#banner-xs', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay:true,
+        pagination: {
+          el: '#banner-xs>.swiper-pagination',
+          clickable: true,
+        },
+      });
       var swiper1 = new Swiper('#swiper-scroll', {
         loop: true, //允许从第一张到最后一张，或者从最后一张到第一张  循环属性
         slidesPerView: 5, // 设置显示7张

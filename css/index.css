@@ -180,9 +180,9 @@ body {
 }
 .ad h1 {
   text-align: center;
-  position: relative;
   z-index: 999;
   position: absolute;
+  margin: 0;
 }
 .lxwm,
 .lxfs,
@@ -260,10 +260,10 @@ body {
   background-image: url('../image/ab1.png');
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-size: cover;
   
 }
 
@@ -361,4 +361,8 @@ body {
 }
 .ibg .row-two .des  {
   justify-content:flex-start
+}
+.banner-xs {
+  margin-bottom: 40px;
+  padding-top: 70px;
 }
