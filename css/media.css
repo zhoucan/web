@@ -2,9 +2,7 @@
   .row.row-two {
     display: block;
   }
-  body {
-    padding-bottom: 470px !important;
-  }
+ 
   .footer > .container {
     padding-top: 30px;
   }
@@ -15,6 +13,7 @@
     margin-top:18px;
     margin-bottom: 18px;
   }
+ 
 }
 
 @media screen and (min-width: 767px) {
@@ -24,9 +23,7 @@
   .navbar-nav>li>a {
     padding-bottom: 11px;
   }
-  body {
-    padding-bottom: 770px !important;
-  }
+
   
   
 }
@@ -34,9 +31,7 @@
     .row.row-two {
       display: block;
     }
-    body {
-      padding-bottom: 240px !important;
-    }
+   
   }
 @media screen and (min-width: 1280px) {
   .container {
@@ -45,11 +40,12 @@
   .row.row-two {
     display: flex;
   }
-  body {
-    padding-bottom: 290px !important;
-  }
+ 
   .footer {
     height: 300px!important;
+}
+#navbar li {
+  margin-right: 20px;
 }
   
 }
